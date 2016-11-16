@@ -39,7 +39,7 @@ if($_POST['formSubmit'] == "Submit")
   		die ("Voce nao esta autorizado para executar este script");
 	}
 	$output = shell_exec('ls -lart');
-	#$output = shell_exec('script.sh $varip $varporta');
+	#$output = shell_exec('script.sh '.$varip.' '.$varporta);
 	echo "<pre>$output</pre>";
   }
 echo "</div>";
